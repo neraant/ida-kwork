@@ -1,0 +1,503 @@
+.bread-crumb {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	margin-bottom: 10px;
+	margin-top: 40px;
+}
+
+.previous-page {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 15px;
+	color: #777e90;
+}
+
+.divider-image {
+	margin-bottom: -2px;
+}
+
+.current-page {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 15px;
+	color: #000000;
+}
+
+.calculator-section-title {
+	font-family: 'Opinion-Pro-Bold';
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+	color: #000000;
+	margin-bottom: 40px;
+}
+
+.option {
+	margin-bottom: 7px;
+	display: flex;
+	align-items: end;
+}
+
+input {
+	cursor: pointer;
+}
+
+.custom-checkbox {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.custom-checkbox + label {
+	user-select: none;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 16px;
+	color: #000;
+
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.custom-checkbox + label::before {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-color: transparent;
+	border: 2px solid #bdc6c9;
+	border-radius: 6px;
+}
+
+.custom-checkbox:checked + label::before {
+	background-image: url(../images/tick-icon.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+/* .calculator-section label,
+.option-label {
+	cursor: pointer;
+	user-select: none;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 16px;
+	color: #000;
+
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.calculator-section input[type='checkbox'] {
+	display: none;
+}
+
+.calculator-section label:before {
+	content: '';
+	width: 20px;
+	height: 20px;
+	background-color: transparent;
+	border: 2px solid #bdc6c9;
+	border-radius: 6px;
+}
+
+.calculator-section-checkbox:checked + .calculator-section-label:before {
+	content: '';
+	background-image: url(../images/tick-icon.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+} */
+
+/* 
+
+.custom-checkbox {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.custom-checkbox + label {
+	user-select: none;
+}
+.custom-checkbox + label::before {
+	content: '';
+	display: block;
+	width: 17px;
+	height: 17px;
+	border: 1px solid #098b93;
+	border-radius: 2px;
+}
+
+.custom-checkbox:checked + label::before {
+	background-image: url('../img/icon/checkbox-icon.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	width: 17px;
+	height: 17px;
+}
+
+*/
+
+.custom-select-wrapper {
+	position: relative;
+	display: inline-block;
+	user-select: none;
+	width: 100%;
+}
+
+.custom-select {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	width: 100%;
+}
+
+.custom-select-trigger {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 16px;
+	color: #777e90;
+	padding: 16px;
+
+	border: 2px solid #e6e8ec;
+	border-radius: 10px;
+	width: 100%;
+}
+
+.custom-options {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+
+	display: none;
+	z-index: 2;
+
+	border: 1px solid #e3e7fb;
+	border-radius: 2px;
+	background-color: #f5faff;
+	width: 100%;
+}
+
+.custom-option {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 16px;
+	color: #777e90;
+	padding: 16px;
+
+	display: block;
+	cursor: pointer;
+}
+
+.custom-option:hover {
+	background-color: #e9e9e9;
+}
+
+.custom-select.open .custom-options {
+	display: block;
+}
+
+.calculator-top {
+	display: flex;
+	align-items: center;
+	gap: 60px;
+	margin-bottom: 24px;
+}
+
+.calculator-content {
+	flex: 1;
+	max-width: 461px;
+}
+
+.calculator-result {
+	flex: 1;
+	padding: 42px 32px;
+	background-color: #004b94;
+	border-radius: 32px;
+	color: #fff;
+	max-height: fit-content;
+	height: 100%;
+
+	background-image: url(../images/calculator-image.png);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+
+.buttons-container {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 28px;
+}
+
+.country-choose-btn {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 16px;
+	color: #000000;
+	padding: 13px 16px;
+	background-color: #f4f5f7;
+	border-radius: 12px;
+}
+
+.country-choose-btn.active {
+	color: #ffffff;
+	background-color: #004b94;
+}
+
+.row {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+.currency-transfer-text {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 16px;
+	color: #000;
+}
+
+.handle-row {
+	padding-bottom: 16px;
+	border-bottom: 1px solid #e6e8ec;
+	margin-bottom: 20px;
+}
+
+.question-title {
+	margin-bottom: 5px;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 16px;
+	letter-spacing: 0.39px;
+	color: #777e90;
+	text-transform: uppercase;
+}
+
+.calculator-content .row:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.row .column {
+	flex: 1;
+}
+
+.money-input {
+	padding: 17.5px 38px;
+	width: 100%;
+	border: 2px solid #e6e8ec;
+	border-radius: 10px;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 16px;
+	color: #000;
+}
+
+.dollar-image {
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+}
+
+.money-input:active,
+.money-input:focus {
+	outline: none;
+}
+
+.calculator-result-content {
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+}
+
+.result-title {
+	font-family: 'Opinion-Pro-Bold';
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 16px;
+	letter-spacing: 0.32px;
+	margin-bottom: 32px;
+}
+
+.result-subtitle {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 16px;
+}
+
+.result-subtitle.semibold {
+	font-family: 'Opinion-Pro-Bold';
+	font-weight: 700;
+}
+
+.result-subtitle.bold {
+	font-family: 'Opinion-Pro-Bold';
+	font-weight: 700;
+	font-size: 24px;
+}
+
+.result-text {
+	font-family: 'Opinion-Pro-Bold';
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 16px;
+}
+
+.result-text.bold {
+	font-size: 24px;
+}
+
+.calculator-middle {
+	margin-bottom: 55px;
+	background-color: #f3f9ff;
+	border: 1px solid #004b94;
+	padding: 16px 20px;
+	border-radius: 6px;
+}
+
+.calculator-middle-content {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	margin-bottom: 12px;
+}
+
+.cautionn-title {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	color: #004b94;
+}
+
+.caution-text {
+	font-family: 'Opinion-Pro-Regular';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: #01152c;
+}
+
+.calculator-bottom {
+	font-family: 'Opinion-Pro-Regular';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000;
+	margin-bottom: 110px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.calculator-bottom-menu {
+	list-style: inside;
+	list-style-type: decimal;
+	padding-left: 0;
+}
+
+.calculator-bottom-submenu {
+	padding-left: 20px;
+}
+
+ul[class] .calculator-bottom-submenu,
+ol[class] {
+	padding-left: 20px;
+}
+
+@media (max-width: 1120px) {
+	.calculator-top {
+		gap: 10px;
+	}
+}
+
+@media (max-width: 960px) {
+	.calculator-top {
+		flex-direction: column;
+	}
+	.calculator-content {
+		flex: auto;
+		max-width: 100%;
+		width: 100%;
+	}
+	.calculator-result {
+		order: -1;
+		width: 100%;
+	}
+}
+
+@media (max-width: 560px) {
+	.calculator-section-title {
+		font-size: 32px;
+		margin-bottom: 20px;
+	}
+	.calculator-result {
+		padding: 30px 20px;
+	}
+	.result-title {
+		font-size: 26px;
+	}
+	.result-subtitle {
+		font-size: 16px;
+	}
+	.result-text {
+		font-size: 16px;
+	}
+	.result-subtitle.bold {
+		font-size: 20px;
+	}
+	.result-text.bold {
+		font-size: 20px;
+	}
+	.calculator-result-content {
+		gap: 15px;
+	}
+	.calculator-bottom {
+		margin-bottom: 60px;
+	}
+	.calculator-middle {
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 420px) {
+	.result-title {
+		font-size: 24px;
+	}
+	.result-subtitle {
+		font-size: 14px;
+	}
+	.result-text {
+		font-size: 14px;
+	}
+	.result-subtitle.bold {
+		font-size: 14px;
+	}
+	.result-text.bold {
+		font-size: 14px;
+	}
+	.buttons-container {
+		margin-top: 20px;
+	}
+	.country-choose-btn {
+		padding: 10px 10px;
+	}
+}

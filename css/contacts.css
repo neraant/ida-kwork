@@ -1,0 +1,128 @@
+.bread-crumb {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	margin-bottom: 10px;
+	margin-top: 40px;
+}
+
+.previous-page {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 15px;
+	color: #777e90;
+}
+
+.divider-image {
+	margin-bottom: -2px;
+}
+
+.current-page {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 15px;
+	color: #000000;
+}
+
+.contacts-section-title {
+	font-family: 'Opinion-Pro-Bold';
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+	color: #000000;
+	margin-bottom: 10px;
+}
+
+.contacts-section-subtitle {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 16px;
+	color: #777e90;
+	margin-bottom: 26px;
+}
+
+.contacts-section {
+	margin-bottom: 32px;
+}
+
+.contacts-section-inner {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 24px;
+}
+
+.contact-block {
+	padding: 32px;
+	border: 1px solid #d9d9d9;
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.contact-block-title {
+	font-weight: 500;
+	font-size: 21px;
+	line-height: 21px;
+	color: #000000;
+	/* margin-bottom: 24px; */
+}
+
+.content-inner {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.content-title {
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 16px;
+	letter-spacing: 0.65px;
+	text-transform: uppercase;
+	color: #777e90;
+}
+
+.content-text {
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 17px;
+	color: #004b94;
+}
+
+.email-text {
+	text-decoration: underline;
+}
+
+.address-text {
+	color: #1e1e1e;
+}
+
+.map-section {
+	margin-bottom: 110px;
+}
+
+@media (max-width: 960px) {
+	.contacts-section-inner {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 15px;
+	}
+	.contact-block {
+		gap: 15px;
+	}
+}
+
+@media (max-width: 560px) {
+	.contacts-section-inner {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.contact-block-title {
+		font-size: 18px;
+	}
+	.content-text {
+		font-size: 15px;
+	}
+	.map-section {
+		margin-bottom: 60px;
+	}
+}

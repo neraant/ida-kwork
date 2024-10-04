@@ -1,0 +1,275 @@
+.bread-crumb {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	margin-top: 40px;
+	margin-bottom: 24px;
+}
+
+.first-page {
+	font-family: 'Opinion-Pro-Regular';
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 15px;
+	color: #777e90;
+	margin-top: -4px;
+}
+
+.previous-page,
+.current-page {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 15px;
+	color: #777e90;
+	margin-top: -4px;
+}
+
+.current-page {
+	color: #000;
+}
+
+.news-section-inner {
+	max-height: none;
+	overflow: hidden;
+	transition: none;
+}
+
+.news-section .container {
+	display: flex;
+	gap: 24px;
+}
+
+.news-sidebar {
+	flex: none;
+	max-width: none;
+	flex-basis: 300px;
+}
+
+.news-top-title {
+	font-family: 'Opinion-Pro-Bold';
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 52px;
+	color: #000;
+	margin-bottom: 16px;
+}
+
+.news-top-image {
+	border-radius: 24px;
+	object-fit: cover;
+	height: 100%;
+	max-height: 444px;
+	width: 100%;
+	object-position: 50% 80%;
+	margin-bottom: 24px;
+}
+
+.news-section-content {
+	display: flex;
+	gap: 18px;
+	padding-bottom: 40px;
+	margin-bottom: 24px;
+}
+
+.share-social-links-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 6px;
+	margin-left: 18px;
+}
+
+.share-social-links-title {
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 24px;
+	color: #777e90;
+}
+
+.social-link {
+	transition: all 0.2s;
+}
+
+.social-link:hover {
+	transform: scale(1.1);
+}
+
+.author-inforamtion-block {
+	display: flex;
+	gap: 16px;
+	margin-bottom: 24px;
+}
+
+.author-image {
+	width: 45px;
+	height: 45px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.author-inforamtion-text {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.author-name {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: -0.14px;
+	color: #000000;
+}
+
+.author-link {
+	text-decoration: underline;
+	width: 100%;
+}
+
+.last-update-text {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	color: #777e90;
+}
+
+.news-section .news-title {
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 28px;
+	color: #000;
+	margin-bottom: 16px;
+}
+
+.news-text {
+	font-family: 'Opinion-Pro-Regular';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000;
+}
+
+.news-text:not(:last-child) {
+	margin-bottom: 16px;
+}
+
+.news-section .news-image {
+	border-radius: 24px;
+	max-height: 444px;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: 50% 90%;
+	margin-bottom: 8px;
+}
+
+.news-image-description {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	color: #777e90;
+	margin-bottom: 16px;
+}
+
+.blockquote-text {
+	display: flex;
+	margin-bottom: 16px;
+}
+
+.blockquote-text::before {
+	content: '';
+	background-color: #004b94;
+	width: 16px;
+	min-height: 100%;
+}
+
+.quotes-image {
+	height: fit-content;
+	margin-right: 10px;
+	margin-left: 19px;
+}
+
+.blockquote-text .news-text {
+	margin-bottom: 0;
+}
+
+.recomendations-section {
+	padding-top: 40px;
+	margin-bottom: 70px;
+}
+
+.recomendations-section .news-title:hover {
+	color: #004b94;
+}
+
+@media (max-width: 960px) {
+	.news-section .container {
+		flex-direction: column;
+	}
+	.news-sidebar {
+		order: -1;
+		flex-basis: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.news-title {
+		font-size: 22px;
+	}
+	.news-text {
+		font-size: 14px;
+	}
+	.news-text:not(:last-child) {
+		margin-bottom: 10px;
+	}
+	.share-social-links-container {
+		margin-left: 10px;
+	}
+}
+
+@media (max-width: 600px) {
+	.first-page {
+		font-size: 12px;
+	}
+	.previous-page,
+	.current-page {
+		font-size: 12px;
+	}
+	.news-section-content {
+		flex-direction: column;
+		padding-bottom: 0;
+		margin-bottom: 0;
+		gap: 16px;
+	}
+	.share-social-links-container {
+		margin-left: 0;
+		flex-direction: row;
+		gap: 15px;
+	}
+	.share-social-links-title {
+		margin-right: 5px;
+	}
+	.news-top-title {
+		font-size: 32px;
+		line-height: 40px;
+	}
+	.author-inforamtion-block {
+		margin-bottom: 16px;
+	}
+	.news-top-image {
+		margin-bottom: 16px;
+	}
+	.news-section .news-title {
+		margin-bottom: 10px;
+	}
+	.news-image-description {
+		margin-bottom: 10px;
+	}
+	.bread-crumb {
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+	.recomendations-section {
+		margin-bottom: 30px;
+	}
+}
